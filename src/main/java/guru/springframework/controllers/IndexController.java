@@ -7,15 +7,8 @@ import guru.springframework.repositories.UnitOfMeasureRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-<<<<<<< HEAD
-
-=======
 import java.util.Optional;
 
-/**
- * Created by jt on 6/1/17.
- */
->>>>>>> upstream/database-initialization
 @Controller
 public class IndexController {
 
