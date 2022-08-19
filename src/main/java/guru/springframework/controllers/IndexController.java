@@ -6,17 +6,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-<<<<<<< HEAD
+
 
 import java.util.Optional;
 
 
-=======
-/**
- * Created by jt on 6/1/17.
- */
+
 @Slf4j
->>>>>>> upstream/lombok-gotchas
+
 @Controller
 public class IndexController {
 
