@@ -1,5 +1,6 @@
 # Spring Boot Recipe Application
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 [![CircleCI](https://circleci.com/gh/springframeworkguru/spring5-recipe-app.svg?style=svg)](https://circleci.com/gh/springframeworkguru/spring5-recipe-app)
@@ -10,3 +11,5 @@ You can learn about my Spring Framework 5 Online course [here.](https://go.sprin
 
 =======
 >>>>>>> upstream/introduction-to-junit
+=======
+>>>>>>> upstream/using-mockito-mocks
