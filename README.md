@@ -1,4 +1,3 @@
-# Spring Boot Recipe Application
 
 
 
