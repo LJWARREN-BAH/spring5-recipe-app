@@ -1,17 +1,14 @@
 package guru.springframework.controllers;
 
-<<<<<<< HEAD
+
 import guru.springframework.services.RecipeService;
-import org.h2.index.Index;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-=======
+
 import guru.springframework.domain.Recipe;
-import guru.springframework.services.RecipeService;
-import org.junit.Before;
-import org.junit.Test;
 import org.mockito.ArgumentCaptor;
->>>>>>> upstream/mockiot-argument-capture
+
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.ui.Model;
@@ -19,23 +16,14 @@ import org.springframework.ui.Model;
 import java.util.HashSet;
 import java.util.Set;
 
-<<<<<<< HEAD
+
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.AdditionalMatchers.eq;
-import static org.mockito.ArgumentMatchers.anySet;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+
+import static org.mockito.Mockito.*;
 
 class IndexControllerTest {
-=======
-import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.*;
-/**
- * Created by jt on 6/17/17.
- */
-public class IndexControllerTest {
 
->>>>>>> upstream/mockiot-argument-capture
+
     @Mock
     RecipeService recipeService;
 
@@ -44,32 +32,27 @@ public class IndexControllerTest {
 
     IndexController controller;
 
-<<<<<<< HEAD
     @BeforeEach
     public void setUp() throws Exception {
         MockitoAnnotations.openMocks(this);
-=======
-    @Before
-    public void setUp() throws Exception {
-        MockitoAnnotations.initMocks(this);
 
->>>>>>> upstream/mockiot-argument-capture
         controller = new IndexController(recipeService);
     }
 
+//    @Test
+//
+//    void getIndexPage() throws Exception {
+//
+//        String viewName = controller.getIndexPage(model);
+//        Set anySet = new HashSet<String>();
+//        assertEquals("index", viewName);
+//        verify(recipeService, times(1)).getRecipes();
+//        verify(model, times(1)).addAttribute(("recipes"), anySet);
+//    }
     @Test
-<<<<<<< HEAD
-    void getIndexPage() throws Exception {
-
-        String viewName = controller.getIndexPage(model);
-        Set anySet = new HashSet<String>();
-        assertEquals("index", viewName);
-        verify(recipeService, times(1)).getRecipes();
-        verify(model, times(1)).addAttribute(("recipes"), anySet);
-    }
-=======
     public void getIndexPage() throws Exception {
 
+        Set anySet = new HashSet<String>();
         //given
         Set<Recipe> recipes = new HashSet<>();
         recipes.add(new Recipe());
@@ -94,6 +77,4 @@ public class IndexControllerTest {
         Set<Recipe> setInController = argumentCaptor.getValue();
         assertEquals(2, setInController.size());
     }
-
->>>>>>> upstream/mockiot-argument-capture
 }
